@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Walderly Junior</title>
+    <!-- Incluindo o seu arquivo CSS personalizado com classes simplificadas -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Incluindo a biblioteca de ícones do Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Walderly JR</a>
+            <div class="navbar-toggle-container">
+                <button id="menu-button" class="navbar-toggle-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="navbar-links-desktop">
+                <a href="#about" class="nav-link">Sobre Mim</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu móvel (invisível por padrão) -->
+    <div id="mobile-menu" class="mobile-menu hidden-menu">
+        <div>
+            <button id="close-menu-button" class="mobile-menu-close-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+            <nav class="mobile-nav-links">
+                <a href="#about" class="nav-link">Sobre Mim</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Seção de destaque (Hero) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <img src="img/Fotoperfil-removebg-preview.png" alt="Foto de perfil de Walderly Junior"
+                class="hero-image" />
+            <h1 class="hero-title">Olá, sou Walderly Junior.</h1>
+            <p class="hero-subtitle">
+                Desenvolvedor Full Stack apaixonado por criar soluções inovadoras.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://github.com/WalderlyJR" target="_blank" class="button button-github">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/walderly-junior-023547248" target="_blank"
+                    class="button button-linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção "Sobre Mim" -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <br class="section-text">
+               Sou Desenvolvedor Full Stack há 3 anos e possuo experiência com linguagens como C, C++, C#, Java, WordPress, Node.js, Angular, Docker, HTML, CSS, MySQL, SQLserver, AWS e Git/GitHub.
+               <br>Já atuei em projetos reais de sites institucionais, eventos e sistemas automatizados com Arduino, sempre com foco em usabilidade, segurança e automação prática.
+               <h2 class="section-title">Formação</h2>
+               <br>Desenvolvimento de sistemas (Senai) 
+               <br>Análise e Desenvolvimento de Sistemas (IFBA)</br>
+               <n>Engenharia de Software (Uninter)</n>
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção de Habilidades (Skills) -->
+    <section id="skills" class="skills-section">
+        <div class="section-container-wide">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <!-- Cards de habilidades com ícones -->
+                <div class="skill-card" style="animation-delay: 0.1s;">
+                    <i class="fab fa-html5 skill-icon-html"></i>
+                    <span class="skill-text">HTML</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.2s;">
+                    <i class="fab fa-css3-alt skill-icon-css"></i>
+                    <span class="skill-text">CSS</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.3s;">
+                    <i class="fab fa-js-square skill-icon-js"></i>
+                    <span class="skill-text">JavaScript</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.4s;">
+                    <i class="fab fa-angular skill-icon-angular"></i>
+                    <span class="skill-text">Angular</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.5s;">
+                    <i class="fab fa-java skill-icon-java"></i>
+                    <span class="skill-text">Java</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.6s;">
+                    <i class="fab fa-node-js skill-icon-node"></i>
+                    <span class="skill-text">Node.js</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.7s;">
+                    <i class="fab fa-docker skill-icon-docker"></i>
+                    <span class="skill-text">Docker</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.7s;">
+                    <i class="fab fa-docker skill-icon-docker"></i>
+                    <span class="skill-text">C#</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.7s;">
+                    <i class="fab fa-docker skill-icon-docker"></i>
+                    <span class="skill-text">WordPress</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.7s;">
+                    <i class="fab fa-docker skill-icon-docker"></i>
+                    <span class="skill-text">Tailwind CSS</span>
+                </div>
+                <div class="skill-card" style="animation-delay: 0.8s;">
+                    <i class="fab fa-git-alt skill-icon-git"></i>
+                    <span class="skill-text">Git/GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projects" class="projects-section">
+        <div class="section-container-wide">
+            <h2 class="section-title">Alguns Projetos</h2>
+            <div class="projects-grid">
+                <!-- Card de Projeto 1 -->
+                <div class="project-card">
+                    <h3 class="project-title">Loja de eletrônicos</h3>
+                    <p class="project-description">Com carrinho e painel de administração.</p>
+                    <img src="img/souza.png" alt="" class="project-image" width="200px">
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">AWS</span>
+
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Livro</h3>
+                    <p class="project-description">Portfolio de lançamento do Livro de cabo a rabo</p>
+                    <img src="img/telawaldy.png" alt="" class="project-image" width="200px">
+                    <div class="project-tags">
+                        <span class="tag">CSS</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                </div>
+                  <div class="project-card">
+                    <h3 class="project-title">Pizzaria</h3>
+                    <p class="project-description">Sistema de pedidos</p>
+                            <img src="img/Captura de tela de 2025-06-27 09-46-56.png" alt="" class="project-image" width="200px">
+                    <div class="project-tags">
+                        <span class="tag">FIGMA</span>
+                    </div>
+                </div>
+                <!-- Card de Projeto 2 -->
+                <div class="project-card">
+                    <h3 class="project-title">Plataforma de eventos</h3>
+                    <img src="img/imagemfitnes.jpeg" alt="" class="project-image" width="200px">
+                    <p class="project-description">Com cadastro de atletas.</p>
+                    <div class="project-tags">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Card de Projeto 3 -->
+                <div class="project-card">
+                    <h3 class="project-title">Sistema de estoque de restaurante</h3>
+                    <p class="project-description">Gerenciamento completo do estoque.</p>
+                    
+                    <div class="project-tags">
+                        <span class="tag">Angular</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">SQLServer</span>
+                    </div>
+                </div>
+
+                <!-- Card de Projeto 4 -->
+                <div class="project-card">
+                    <h3 class="project-title">Sistema de Detecção de Vagas</h3>
+                    <p class="project-description">Projeto com sensores e LEDs para estacionamento.</p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">C++</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Sistema de Prestação de serviço </h3>
+                    <p class="project-description">Para Profissional autônomo</p>
+                    <img src="img/amoh.png" alt="" class="project-image" width="200px">
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">AWS(Armazon)</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-text">
+                Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato!
+            </p>
+            <div class="contact-buttons">
+                <a href="mailto:walderlyjunior123@gmail.com" class="button button-mail">
+                    <i class="far fa-envelope"></i>
+                    walderlyjunior123@gmail.com
+                </a>
+                <a href="tel:+5571981814555" class="button button-phone">
+                    <i class="fas fa-phone"></i>
+                    (71) 98181-4555
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; Walderly Junior. Todos os direitos reservados.</p>
+    </footer>
+<script src="script.js"></script>
+  
+</body>
+
+</html>
