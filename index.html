@@ -1,257 +1,384 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Walderly Junior</title>
-    <!-- Incluindo o seu arquivo CSS personalizado com classes simplificadas -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Incluindo a biblioteca de ícones do Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walderly Junior | Sites, Sistemas e Automações</title>
 
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="navbar-brand">Walderly JR</a>
-            <div class="navbar-toggle-container">
-                <button id="menu-button" class="navbar-toggle-button">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="navbar-links-desktop">
-                <a href="#about" class="nav-link">Sobre Mim</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-              
-            </div>
-        </div>
-    </nav>
+<header class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="logo">Walderly JR</a>
 
-    <!-- Menu móvel (invisível por padrão) -->
-    <div id="mobile-menu" class="mobile-menu hidden-menu">
-        <div>
-            <button id="close-menu-button" class="mobile-menu-close-button">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                    </path>
-                </svg>
-            </button>
-            <nav class="mobile-nav-links">
-                <a href="#about" class="nav-link">Sobre Mim</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-              
-            </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="mobile-menu">
+        <a href="#about">Sobre</a>
+      <a href="#services">Serviços</a>
+      <a href="#projects">Projetos</a>
+    
+     
+
+     
+  </div>
+</header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="badge">Engenheiro de Software</span>
+
+        <h1>Crio sites, sistemas e automações para sua empresa</h1>
+
+        <p>
+          Desenvolvimento de landing pages, sistemas web, lojas virtuais,
+          automações com WhatsApp e soluções personalizadas para empresas,
+          profissionais autônomos e infoprodutores.
+        </p>
+
+        <div class="hero-buttons">
+          
+          <a href="#projects" class="btn btn-secondary">
+            Ver projetos
+          </a>
         </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>Sites</strong>
+            <span>Landing pages e páginas profissionais</span>
+          </div>
+          <div>
+            <strong>Sistemas</strong>
+            <span>Painéis, controle financeiro e gestão</span>
+          </div>
+          <div>
+            <strong>Automações</strong>
+            <span>WhatsApp, chatbots e integrações</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-box">
+        <img src="img/Fotoperfil-removebg-preview.png" alt="Foto de Walderly Junior" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section services">
+    <div class="section-header">
+      <span>Serviços</span>
+      <h2>Como posso ajudar seu negócio</h2>
+      <p>
+        Soluções digitais criadas para atrair clientes, automatizar processos
+        e melhorar a presença online da sua empresa.
+      </p>
     </div>
 
+    <div class="cards-grid">
+      <div class="card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Sites e Landing Pages</h3>
+        <p>
+          Criação de páginas modernas, responsivas e focadas em conversão para
+          divulgar serviços, produtos e campanhas.
+        </p>
+      </div>
 
-    <!-- Seção de destaque (Hero) -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <img src="img/Fotoperfil-removebg-preview.png" alt="Foto de perfil de Walderly Junior"
-                class="hero-image" />
-            <h1 class="hero-title">Olá, sou Walderly Junior.</h1>
-            <p class="hero-subtitle">
-                Desenvolvedor Full Stack apaixonado por criar soluções inovadoras.
-            </p>
-           
+      <div class="card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Lojas e Catálogos Online</h3>
+        <p>
+          Desenvolvimento de vitrines digitais, páginas de venda e estruturas
+          para apresentar produtos de forma profissional.
+        </p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-gears"></i>
+        <h3>Sistemas Web</h3>
+        <p>
+          Sistemas personalizados para controle financeiro, estoque, pedidos,
+          clientes, agendamentos e gestão interna.
+        </p>
+      </div>
+
+      <div class="card">
+        <i class="fa-brands fa-whatsapp"></i>
+        <h3>Automações com WhatsApp</h3>
+        <p>
+          Chatbots, menus automáticos, atendimento inicial, captação de leads e
+          integração com ferramentas externas.
+        </p>
+      </div>
+
+      <div class="card">
+        <i class="fa-brands fa-wordpress"></i>
+        <h3>WordPress e Elementor</h3>
+        <p>
+          Criação e ajustes em sites WordPress, páginas institucionais,
+          blogs, páginas de venda e melhorias visuais.
+        </p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+        <h3>Publicação e Hospedagem</h3>
+        <p>
+          Ajudo com domínio, hospedagem, GitHub Pages, Hostinger, Railway,
+          banco de dados e publicação do projeto.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="section-header">
+      <span>Portfólio</span>
+      <h2>Projetos desenvolvidos</h2>
+      <p>
+        Alguns exemplos de soluções que demonstram minha experiência com sites,
+        sistemas e aplicações web.
+      </p>
+    </div>
+<div class="projects-grid">
+
+      <div class="project-card">
+        <img src="img/power-bi-selection-pane.png" alt="Dashboard em Power BI" />
+        <div class="project-content">
+          <h3>Dashboard em Power BI</h3>
+          <p>
+            Painel gerencial para acompanhamento de indicadores,
+            análise de dados e apoio à tomada de decisão.
+          </p>
+          <div class="tags">
+            <span>Power BI</span>
+            <span>Dados</span>
+            <span>Indicadores</span>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Seção "Sobre Mim" -->
-    <section id="about" class="about-section">
-        <div class="section-container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <br class="section-text">
-               Sou Desenvolvedor Full Stack e possuo experiência com linguagens como C, C++, C#, Java, WordPress, Node.js, Angular, Docker, HTML, CSS, MySQL, SQLserver, AWS e Git/GitHub.
-               <br>Já atuei em projetos reais de sites institucionais, eventos e sistemas automatizados com Arduino, sempre com foco em usabilidade, segurança e automação prática.
-               <h2 class="section-title">Formação</h2>
-               <br>Desenvolvimento de sistemas (Senai) 
-               <br>Análise e Desenvolvimento de Sistemas (IFBA)</br>
-               <n>Engenharia de Software (Uninter)</n>
-            </p>
+      <div class="project-card">
+        <img src="img/telas-whatsapp-05.webp" alt="Automação de processos" />
+        <div class="project-content">
+          <h3>Automação de Processos chatbot </h3>
+          <p>
+            Solução para reduzir tarefas repetitivas, organizar informações
+            e melhorar a produtividade operacional.
+          </p>
+          <div class="tags">
+            <span>RPA</span>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>IA</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Seção de Habilidades (Skills) -->
-    <section id="skills" class="skills-section">
-        <div class="section-container-wide">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <!-- Cards de habilidades com ícones -->
-                <div class="skill-card" style="animation-delay: 0.1s;">
-                    <i class="fab fa-html5 skill-icon-html"></i>
-                    <span class="skill-text">HTML</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.2s;">
-                    <i class="fab fa-css3-alt skill-icon-css"></i>
-                    <span class="skill-text">CSS</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.3s;">
-                    <i class="fab fa-js-square skill-icon-js"></i>
-                    <span class="skill-text">JavaScript</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.4s;">
-                    <i class="fab fa-angular skill-icon-angular"></i>
-                    <span class="skill-text">Angular</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.5s;">
-                    <i class="fab fa-java skill-icon-java"></i>
-                    <span class="skill-text">Java</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.6s;">
-                    <i class="fab fa-node-js skill-icon-node"></i>
-                    <span class="skill-text">Node.js</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.7s;">
-                    <i class="fab fa-docker skill-icon-docker"></i>
-                    <span class="skill-text">Docker</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.7s;">
-                    <i class="fab fa-docker skill-icon-docker"></i>
-                    <span class="skill-text">C#</span>
-                </div>
-                 <div class="skill-card" style="animation-delay: 0.7s;">
-                    <i class="fab fa-docker skill-icon-docker"></i>
-                    <span class="skill-text">React</span>
-                </div>
-                 <div class="skill-card" style="animation-delay: 0.7s;">
-                    <i class="fab fa-docker skill-icon-docker"></i>
-                    <span class="skill-text">TypeScript</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.7s;">
-                    <i class="fab fa-docker skill-icon-docker"></i>
-                    <span class="skill-text">WordPress</span>
-                </div>
-                <div class="skill-card" style="animation-delay: 0.7s;">
-                    <i class="fab fa-docker skill-icon-docker"></i>
-                    <span class="skill-text">Tailwind CSS</span>
-                </div>
-                 
-                <div class="skill-card" style="animation-delay: 0.8s;">
-                    <i class="fab fa-git-alt skill-icon-git"></i>
-                    <span class="skill-text">Git/GitHub</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Projetos -->
-    <section id="projects" class="projects-section">
-        <div class="section-container-wide">
-            <h2 class="section-title">Alguns Projetos</h2>
-            <div class="projects-grid">
-                <!-- Card de Projeto 1 -->
-                <div class="project-card">
-                    <h3 class="project-title">Loja de eletrônicos</h3>
-                    <p class="project-description">Com carrinho e painel de administração.</p>
-                    <img src="img/souza.png" alt="" class="project-image" width="200px">
-                    <div class="project-tags">
-                        <span class="tag">C#</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">.NET</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">Bootstrap</span>
-                        <span class="tag">AWS</span>
-
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">Livro</h3>
-                    <p class="project-description">Portfolio de lançamento do Livro de cabo a rabo</p>
-                    <img src="img/telawaldy.png" alt="" class="project-image" width="200px">
-                    <div class="project-tags">
-                        <span class="tag">CSS</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">AWS</span>
-                    </div>
-                </div>
-                  <div class="project-card">
-                    <h3 class="project-title">Pizzaria</h3>
-                    <p class="project-description">Sistema de pedidos</p>
-                            <img src="img/Captura de tela de 2025-06-27 09-46-56.png" alt="" class="project-image" width="200px">
-                    <div class="project-tags">
-                        <span class="tag">HTML</span>
-                         <span class="tag">CSS</span>
-                         <span class="tag">JavaScript</span>
-                         <span class="tag">Tailwind</span>
-                           <span class="tag">SQLserver</span>
-                        
-                    </div>
-                </div>
-                <!-- Card de Projeto 2 -->
-                <div class="project-card">
-                    <h3 class="project-title">Plataforma de eventos</h3>
-                    <img src="img/imagemfitnes.jpeg" alt="" class="project-image" width="200px">
-                    <p class="project-description">Com cadastro de atletas.</p>
-                    <div class="project-tags">
-                        <span class="tag">WordPress</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </div>
-
-                <!-- Card de Projeto 3 -->
-                <div class="project-card">
-                    <h3 class="project-title">Sistema de estoque de restaurante</h3>
-                    <p class="project-description">Gerenciamento completo do estoque.</p>
-                    
-                    <div class="project-tags">
-                        <span class="tag">Angular</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">SQLServer</span>
-                    </div>
-                </div>
-
-                <!-- Card de Projeto 4 -->
-                <div class="project-card">
-                    <h3 class="project-title">Sistema de Detecção de Vagas</h3>
-                    <p class="project-description">Projeto com sensores e LEDs para estacionamento.</p>
-                    <div class="project-tags">
-                        <span class="tag">Arduino</span>
-                        <span class="tag">C++</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">Sistema de Prestação de serviço </h3>
-                    <p class="project-description">Para Profissional autônomo</p>
-                    <img src="img/amoh.png" alt="" class="project-image" width="200px">
-                    <div class="project-tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">AWS(Armazon)</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">C#</span>
-                        <span class="tag">.NET</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+      </div>
    
+      <div class="project-card">
+        <img src="img/souza.png" alt="Loja de eletrônicos" />
+        <div class="project-content">
+          <h3>Loja de Eletrônicos</h3>
+          <p>
+            Loja virtual com carrinho de compras, painel administrativo e
+            gerenciamento de produtos.
+          </p>
+          <div class="tags">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <p>&copy; Walderly Junior. Todos os direitos reservados.</p>
-    </footer>
-<script src="script.js"></script>
+      <div class="project-card">
+        <img src="img/amoh.png" alt="Sistema de prestação de serviços" />
+        <div class="project-content">
+          <h3>Sistema de Prestação de Serviços</h3>
+          <p>
+            Plataforma para profissionais autônomos divulgarem serviços e
+            receberem solicitações de clientes.
+          </p>
+          <div class="tags">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>MySQL</span>
+            <span>AWS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img/Controle Finaceiro.png" alt="Sistema de controle financeiro" />
+        <div class="project-content">
+          <h3>Sistema de Controle Financeiro</h3>
+          <p>
+            Sistema para empresas controlarem receitas, despesas, saldo e
+            movimentações financeiras.
+          </p>
+          <div class="tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>C#</span>
+            <span>.NET</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img/Captura de tela de 2025-06-27 09-46-56.png" alt="Sistema para pizzaria" />
+        <div class="project-content">
+          <h3>Sistema para Pizzaria</h3>
+          <p>
+            Interface para pedidos online, apresentação de produtos e fluxo
+            simples para o cliente comprar.
+          </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Tailwind</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img/imagemfitnes.jpeg" alt="Plataforma de eventos" />
+        <div class="project-content">
+          <h3>Plataforma de Eventos</h3>
+          <p>
+            Site para apresentação de eventos, cadastro de atletas e divulgação
+            de informações importantes.
+          </p>
+          <div class="tags">
+            <span>WordPress</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="project-card">
+        <img src="img/telawaldy.png" alt="Landing page para lançamento de livro" />
+        <div class="project-content">
+          <h3>Landing Page para Livro</h3>
+          <p>
+            Página de divulgação para lançamento de livro, com apresentação
+            visual e foco em conversão.
+          </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>AWS</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="about-container">
+      <div>
+        <span class="badge">Sobre mim</span>
+        <h2>Desenvolvedor focado em entregar soluções úteis para negócios reais</h2>
+        <p>
+          Sou Walderly Junior, Engenheiro de Software. Trabalho com
+          criação de sites, sistemas web, automações, integrações com APIs e
+          soluções personalizadas para empresas e profissionais.
+        </p>
+
+        <p>
+          Meu objetivo é transformar ideias em projetos funcionais, com visual
+          profissional, boa experiência para o usuário e estrutura pronta para
+          publicação.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Tecnologias que utilizo</h3>
+        <div class="tech-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>C#</span>
+          <span>.NET</span>
+          <span>WordPress</span>
+          <span>MySQL</span>
+          <span>SQL Server</span>
+          <span>Docker</span>
+          <span>Git/GitHub</span>
+          <span>AWS</span>
+          <span>Power BI</span>
+          <span>Python</span>
+          <span>RPA</span>
+          <span>Chatbots</span>
+          <span>Angular</span>
+          <span>Tailwind</span>
+          <span>Bootstrap</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   
-</body>
 
+  <section class="section why">
+    <div class="section-header">
+      <span>Vantagens</span>
+      <h2>Por que contratar meu serviço?</h2>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <i class="fa-solid fa-comments"></i>
+        <h3>Atendimento direto</h3>
+        <p>Você conversa diretamente comigo durante o projeto, sem burocracia.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>Design responsivo</h3>
+        <p>Projetos adaptados para celular, tablet e computador.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-rocket"></i>
+        <h3>Publicação completa</h3>
+        <p>Ajudo com hospedagem, domínio, deploy e configurações finais.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-box">
+      <h2>Vamos tirar sua ideia do papel?</h2>
+     
+
+      
+  <footer class="footer">
+    <p>&copy; Walderly Junior. Todos os direitos reservados.</p>
+  </footer>
+<script src="script.js"></script>
+</body>
 </html>
